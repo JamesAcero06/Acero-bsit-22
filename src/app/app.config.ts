@@ -1,11 +1,6 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { Routes } from '@angular/router';
+import { PostsComponent } from './posts/posts.component'; 
 
-import { routes } from './app.routes';
-
-export const appConfig: ApplicationConfig = {
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
-  ]
-};
+export const routes: Routes = [
+  { path: 'posts', component: PostsComponent }
+];

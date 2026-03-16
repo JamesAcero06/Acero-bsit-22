@@ -1,0 +1,7 @@
+<main class="posts-container">
+  <article *ngFor="let post of posts; let i = index" class="post-card">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.description }}</p>
+    <button class="delete-btn" (click)="deletePost(i)">Delete</button>
+  </article>
+</main>
