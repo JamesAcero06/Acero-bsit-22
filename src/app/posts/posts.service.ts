@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class PostsService {
-  // DITO SA LOOB NG CLASS DAPAT ANG POSTS
   private posts: any[] = [
     { title: 'James Acero', description: 'Sample description 1' },
     { title: 'James Acero', description: 'Sample description 2' },
